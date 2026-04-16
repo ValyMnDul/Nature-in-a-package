@@ -44,13 +44,21 @@ export default function Contact() {
         </p>
       </div>
 
-      <form className="space-y-6 bg-white/50 dark:bg-stone-800/30 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-xl">
+      <form
+        action="https://formspree.io/f/xyklekpe"
+        method="POST"
+        className="space-y-6 bg-white/50 dark:bg-stone-800/30 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-xl"
+      >
+        <input type="hidden" name="_subject" value="Mesaj nou din formularul Natur Snack" />
+        <input type="hidden" name="_language" value={lang} />
         <div>
           <label className="block text-sm font-bold text-stone-700 dark:text-stone-300 mb-2 uppercase tracking-wider">
             {content.name}
           </label>
           <input
             type="text"
+            name="name"
+            required
             className="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none transition-all"
             placeholder={content.holderName}
           />
@@ -62,6 +70,8 @@ export default function Contact() {
           </label>
           <input
             type="email"
+            name="email"
+            required
             className="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none transition-all"
             placeholder="contact@exemplu.ro"
           />
@@ -73,13 +83,15 @@ export default function Contact() {
           </label>
           <textarea
             rows={5}
+            name="message"
+            required
             className="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none transition-all resize-none"
             placeholder={content.holderMsg}
           ></textarea>
         </div>
 
         <button
-          type="button"
+          type="submit"
           className="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-black py-4 rounded-xl transition-all transform hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-emerald-900/20"
         >
           {content.btn}

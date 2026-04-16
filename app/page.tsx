@@ -31,6 +31,9 @@ const t = {
         accent: "Fresh mai mult",
       },
     ],
+    visualTitle: "POZA",
+    visualSub: "",
+    visualBadge: "Hero Product Shot",
   },
   en: {
     heroBadge: "Local product from Mălini",
@@ -60,6 +63,9 @@ const t = {
         accent: "Longer fresh",
       },
     ],
+    visualTitle: "Space for product photo",
+    visualSub: "Place your main package shot here.",
+    visualBadge: "Hero Product Shot",
   },
 };
 
@@ -119,23 +125,19 @@ export default function Home() {
 
           <div className="relative">
             <div className="aspect-4/5 rounded-4xl border border-stone-200/80 dark:border-zinc-800 overflow-hidden bg-linear-to-br from-stone-100 to-stone-200 dark:from-zinc-900 dark:to-zinc-800 p-6 md:p-8 shadow-xl">
-              <div className="h-full rounded-3xl border border-white/40 dark:border-white/5 bg-white/60 dark:bg-black/30 p-6 flex flex-col justify-between">
-                <div className="text-xs uppercase tracking-[0.25em] font-bold text-stone-500 dark:text-zinc-400">
-                  Natur Snack
+              <div className="h-full rounded-3xl border-2 border-dashed border-emerald-400/40 dark:border-emerald-500/30 bg-white/50 dark:bg-black/20 p-6 flex flex-col justify-between">
+                <div className="inline-flex items-center rounded-full bg-orange-500/15 border border-orange-500/30 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-orange-700 dark:text-orange-300 w-fit">
+                  {text.visualBadge}
                 </div>
-                <div className="space-y-3">
-                  <p className="text-3xl md:text-4xl font-black text-stone-900 dark:text-white leading-tight">
-                    Loturi mici.
-                    <br />
-                    Impact mare.
+                <div className="space-y-3 text-center">
+                  <p className="text-2xl md:text-3xl font-black text-stone-900 dark:text-white leading-tight">
+                    {text.visualTitle}
                   </p>
                   <p className="text-sm md:text-base text-stone-600 dark:text-zinc-300">
-                    Gustare premium pentru birou, școală sau traseu.
+                    {text.visualSub}
                   </p>
                 </div>
-                <div className="inline-flex items-center rounded-full bg-orange-500/15 border border-orange-500/30 px-4 py-2 text-sm font-bold text-orange-700 dark:text-orange-300 w-fit">
-                  Crafted in Mălini
-                </div>
+                <div className="h-10" />
               </div>
             </div>
           </div>

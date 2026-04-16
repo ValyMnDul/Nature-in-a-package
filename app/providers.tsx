@@ -15,7 +15,6 @@ export function Providers({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<"ro" | "en">("ro");
   const [isDark, setIsDark] = useState(false);
 
-  // Acest efect aplică clasa 'dark' direct pe tag-ul HTML, făcând Tailwind să reacționeze
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add("dark");
@@ -40,6 +39,6 @@ export function Providers({ children }: { children: ReactNode }) {
 
 export const useAppContext = () => {
   const context = useContext(AppContext);
-  if (!context) throw new Error("useAppContext trebuie folosit într-un Provider");
+  if (!context) throw new Error("Context error");
   return context;
 };

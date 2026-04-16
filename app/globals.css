@@ -31,8 +31,10 @@ body {
     var(--bg-base);
   background-attachment: fixed;
   min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 body::before {
@@ -46,4 +48,15 @@ body::before {
   background-size: 42px 42px;
   mask-image: radial-gradient(circle at center, black 35%, transparent 85%);
   z-index: -1;
+}
+
+/* iOS Safari can glitch with fixed backgrounds/layers during scroll. */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    background-attachment: scroll;
+  }
+
+  body::before {
+    position: absolute;
+  }
 }

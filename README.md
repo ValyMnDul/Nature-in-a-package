@@ -1,277 +1,204 @@
-# S.C "Natura la Pachet" SRL
-
-# 1. GENERAL PRESENTATION OF THE COMPANY
-
-## 1.1. INITIATING ECONOMIC AGENT
-
-### Company Name  
-S.C. NATUR-FRUCT DESHIDRATAT  
-
-### Legal Form  
-Limited Liability Company (S.R.L.)
-
-### Address  
-Headquarters: Mălini, Main Street No. 13, Suceava County  
-Production Unit: Same location  
-
-Located in an area with fruit/vegetable growing tradition for easy access to raw materials.
-
-### Shareholders  
-- Associate 1 – 50%  
-- Associate 2 – 20%  
-- Associate 3 – 15%  
-- Associate 4 – 15%  
-
-### Main Activity  
-Processing and preservation of fruits and vegetables – CAEN Code 1039  
-
-### Management Structure  
-Linear-functional structure ensuring quality control  
-
-General Manager: Vasile  
-Production Manager: Head of production / food engineer  
+# S.C. "Natura la Pachet" SRL — Plan de Afaceri
 
 ---
 
-## 1.2. BUSINESS DESCRIPTION
+## 1. Prezentare Generală
 
-### Activity  
-Processing fruits from a 2-hectare orchard and vegetables from local suppliers into healthy snacks.
+### Date de identificare
 
-Products include:
-- Fruit chips  
-- Dried vegetable mixes  
-- Instant smoothie cubes  
-- Naturally seasoned vegetable chips  
+| Câmp | Detalii |
+|---|---|
+| **Denumire** | S.C. NATUR-FRUCT DESHIDRATAT SRL |
+| **Formă juridică** | Societate cu Răspundere Limitată (SRL) |
+| **Sediu** | Mălini, Strada Principală nr. 13, județul Suceava |
+| **Cod CAEN** | 1039 – Prelucrarea și conservarea fructelor și legumelor |
+| **Data începerii** | 1 august 2026 |
+| **Manager general** | Vasile |
 
-### Start Date  
-August 1, 2026  
+### Structura acționariatului
 
-### Actions Taken  
-- Market research  
-- Supplier identification  
-- Technical-economic analysis  
-
-### Future Actions  
-- Space preparation  
-- Equipment purchase  
-- HACCP implementation  
-
-### Funding Needs  
-- Total: 250,000 RON  
-- Own funds: 50,000 RON  
-- External funds: 200,000 RON  
-
-### Business Size  
-- Annual revenue: 225,000 RON  
-- Profit: 67,500 RON  
+| Asociat | Cotă |
+|---|---|
+| Asociat 1 | 50% |
+| Asociat 2 | 20% |
+| Asociat 3 | 15% |
+| Asociat 4 | 15% |
 
 ---
 
-# 2. MARKET ANALYSIS
+## 2. Descrierea Afacerii
 
-## Product Description  
-- Thin fruit/vegetable slices  
-- Crispy texture  
-- No additives  
-- Moisture under 10%  
+Compania prelucrează fructe dintr-o livadă proprie de **2 hectare** și legume de la furnizori locali, producând snack-uri sănătoase fără aditivi.
 
-### Uses  
-- Snack  
-- Breakfast ingredient  
-- Cooking base  
+### Produse
 
-### New Product Example  
-Instant smoothie cubes:
-- Ready in 30 seconds  
-- 12-month shelf life  
-- Retains 95% of nutrients  
+| Produs | Descriere | Preț retail |
+|---|---|---|
+| Chipsuri de fructe | Felii subțiri, crocante, umiditate <10% | 8,50–10 RON / 50g |
+| Mix-uri de legume uscate | Combinații de legume deshidratate | 8,50–10 RON / 50g |
+| Cuburi smoothie instant | Gata în 30 sec, valabilitate 12 luni, 95% nutrienți | 10–12 RON / porție |
+| Chipsuri de legume condimentate | Condimentate natural, fără E-uri | 8,50–10 RON / 50g |
 
----
+### Parametri economici
 
-## Economic Parameters  
-- Production cost: 3.50 RON  
-- Wholesale: 5.50 RON  
-- Retail: 8.50–10 RON  
+- **Cost de producție:** 3,50 RON / produs
+- **Preț angro:** 5,50 RON
+- **Preț retail:** 8,50–10 RON
 
 ---
 
-## Market Segment  
-- Active lifestyle individuals  
-- Parents  
-- Vegans / special diets  
+## 3. Analiză de Piață
+
+### Segmente de clienți
+
+| Segment | Frecvență | Priorități | WTP |
+|---|---|---|---|
+| Persoane fizice | Săptămânal | Gust natural, fără aditivi | 10–15 RON |
+| Retaileri | Lunar | Ambalaj, termen de valabilitate | — |
+| Companii | Ocazional | Cadouri corporative, evenimente | — |
+
+### Tendințe de piață
+
+- Cerere crescândă pentru snack-uri sănătoase
+- Migrarea consumatorilor de la alimente ultra-procesate
+- Creștere stabilă estimată pe termen mediu
+
+### Concurență
+
+**Branduri mari:** producție de masă, prețuri mai mici, produse importate.  
+**Producători mici:** produse naturale, capacitate limitată.
+
+### Avantaje competitive
+
+- Materie primă proprie (livadă 2 ha)
+- Flexibilitate în producție
+- Poveste autentică locală (Bucovina)
+- Loturi proaspete, trasabilitate completă
 
 ---
 
-## Market Trends  
-- Growing demand for healthy snacks  
-- Shift from processed foods  
-- Stable growth expected  
+## 4. Strategie de Marketing
+
+### Politica de produs
+
+Gama cuprinde 5 linii:
+1. Pure snacks
+2. Local flavors
+3. Cooking mixes
+4. Vegetable chips
+5. Smoothie cubes
+
+**Ambalaj:** pungi kraft resigilabile, design minimalist, fereastră transparentă.
+
+### Politica de preț
+
+- Metodă: cost-plus
+- Poziționare: mediu-premium
+- Preț țintă: 10–12 RON / 50g
+
+### Distribuție
+
+- Magazin online propriu
+- Parteneri retaileri
+- Vânzare directă (târguri, evenimente)
+
+### Promovare
+
+- Social media (Instagram, Facebook)
+- Participare la evenimente și târguri
+- Materiale educaționale despre alimentație sănătoasă
 
 ---
 
-## Customers  
+## 5. Operațiuni
 
-### Individuals  
-- Buy weekly  
-- Prefer natural taste and no additives  
-- Willing to pay 10–15 RON  
+### Procesul de producție
 
-### Retailers  
-- Buy monthly  
-- Focus on packaging and shelf life  
+1. Recoltare
+2. Spălare și sortare
+3. Tăiere
+4. Deshidratare
+5. Ambalare și etichetare
 
-### Companies  
-- Buy occasionally  
-- Use for gifts/events  
+### Spațiu de producție (80 mp)
 
----
+| Zonă | Suprafață |
+|---|---|
+| Spălare | ~15 mp |
+| Procesare | ~20 mp |
+| Uscare | ~30 mp |
+| Ambalare | ~15 mp |
 
-## Competitors  
+### Echipamente principale
 
-### Large Brands  
-- Mass production  
-- Lower prices  
-- Imported products  
+- Deshidratoare industriale
+- Feliator
+- Mașină de ambalat în vid
 
-### Small Producers  
-- Natural products  
-- Limited capacity  
+### Control calitate
 
----
-
-## Competitive Advantages  
-
-### Our Advantages  
-- Own raw materials  
-- Flexibility  
-- Authentic story  
-- Fresh batches  
+- Sistem HACCP implementat
+- Monitorizare temperatură și umiditate
+- Trasabilitate loturi
 
 ---
 
-# 2.4. MARKETING STRATEGY
+## 6. Informații Financiare
 
-## Product Policy  
-Product ranges:
-- Pure snacks  
-- Local flavors  
-- Cooking mixes  
-- Vegetable chips  
-- Smoothie cubes  
+### Necesar de finanțare
 
-### Packaging  
-- Resealable kraft pouches  
-- Minimalist design  
-- Transparent window  
+| Sursă | Sumă |
+|---|---|
+| Fonduri proprii | 50.000 RON |
+| Fonduri externe | 200.000 RON |
+| **Total** | **250.000 RON** |
 
----
+### Proiecții financiare
 
-## Pricing Policy  
-- Cost-plus method  
-- Medium-premium positioning  
-- 10–12 RON per 50g  
+| An | Venituri (RON) | Profit (RON) | Marjă |
+|---|---|---|---|
+| Anul 1 | 188.000 | 45.000 | ~24% |
+| Anul 2 | 300.000 | 90.000 | ~30% |
+| Anul 3 | 450.000 | 140.000 | ~31% |
 
----
+### Active
 
-## Distribution  
-- Online store  
-- Retail partners  
-- Direct sales  
+- Livadă 2 hectare
+- Clădire producție 80 mp
 
 ---
 
-## Promotion  
-- Social media  
-- Events  
-- Educational materials  
+## 7. Analiza SWOT
+
+### Puncte forte
+- Materie primă proprie → costuri controlate
+- Produse 100% naturale, fără aditivi
+- Flexibilitate și adaptabilitate rapidă la cerere
+
+### Puncte slabe
+- Capacitate de producție limitată
+- Brand nou, fără notorietate
+
+### Oportunități
+- Piața de snack-uri sănătoase în creștere
+- Acces la fonduri europene (PNDR, AFIR)
+
+### Amenințări
+- Creșterea prețurilor la energie
+- Competitori cu resurse mai mari
+- Riscuri climatice (afectarea recoltei)
 
 ---
 
-# 3. OPERATIONS
+## 8. Riscuri și Măsuri de Atenuare
 
-## Production Process  
-- Harvesting  
-- Washing  
-- Cutting  
-- Dehydration  
-- Packaging  
-
----
-
-## Space Layout (80 sqm)  
-- Washing area  
-- Processing area  
-- Drying area  
-- Packaging area  
+| Risc | Impact | Măsură |
+|---|---|---|
+| Sezonalitate | Mediu | Stocuri tampon, diversificare furnizori |
+| Costuri energie | Ridicat | Panouri solare, optimizare consum |
+| Competiție | Mediu | Diferențiere prin autenticitate și calitate |
+| Riscuri climatice | Ridicat | Asigurare cultură, furnizori alternativi |
 
 ---
 
-## Quality Control  
-- HACCP system  
-- Temperature control  
-- Moisture control  
-
----
-
-## Equipment  
-- Industrial dehydrators  
-- Slicer  
-- Vacuum packaging machine  
-
----
-
-# 4. FINANCIAL INFORMATION
-
-## Assets  
-- 2 ha orchard  
-- 80 sqm building  
-
----
-
-## Financial Projections  
-
-### Year 1  
-- Revenue: 188,000 RON  
-- Profit: 45,000 RON  
-
-### Year 2  
-- Revenue: 300,000 RON  
-- Profit: 90,000 RON  
-
-### Year 3  
-- Revenue: 450,000 RON  
-- Profit: 140,000 RON  
-
----
-
-## Risks  
-- Seasonality  
-- Energy costs  
-- Competition  
-- Climate risks  
-
----
-
-# 5. CONCLUSIONS
-
-## SWOT Analysis  
-
-### Strengths  
-- Own raw materials  
-- Natural products  
-- Flexibility  
-
-### Weaknesses  
-- Limited production capacity  
-- New brand  
-
-### Opportunities  
-- Growing healthy market  
-- EU funding  
-
-### Threats  
-- Energy price increase  
-- Strong competitors  
-
----
+*Plan de afaceri elaborat pentru S.C. Natur-Fruct Deshidratat SRL · Mălini, Suceava · 2026*

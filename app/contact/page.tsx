@@ -1,4 +1,5 @@
 "use client";
+import { FormEvent, useState } from "react";
 import { useAppContext } from "../providers";
 
 const t = {
@@ -9,6 +10,9 @@ const t = {
     email: "Adresa de email",
     msg: "Mesajul tău",
     btn: "Trimite Mesajul",
+    sending: "Se trimite...",
+    sent: "Mesaj trimis cu succes. Mulțumim!",
+    error: "A apărut o problemă. Te rugăm să încerci din nou.",
     holderName: "Ion Popescu",
     holderMsg: "Cu ce te putem ajuta?",
     socialTitle: "Ne găsești și pe social media",
@@ -21,6 +25,9 @@ const t = {
     email: "Email Address",
     msg: "Your Message",
     btn: "Send Message",
+    sending: "Sending...",
+    sent: "Message sent successfully. Thank you!",
+    error: "Something went wrong. Please try again.",
     holderName: "John Doe",
     holderMsg: "How can we help you?",
     socialTitle: "Find us on social media",
@@ -31,6 +38,35 @@ const t = {
 export default function Contact() {
   const { lang } = useAppContext();
   const content = t[lang];
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setStatus("sending");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xyklekpe", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      });
+
+      if (response.ok) {
+        form.reset();
+        setStatus("sent");
+        return;
+      }
+
+      setStatus("error");
+    } catch {
+      setStatus("error");
+    }
+  };
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-20">
@@ -45,8 +81,7 @@ export default function Contact() {
       </div>
 
       <form
-        action="https://formspree.io/f/xyklekpe"
-        method="POST"
+        onSubmit={handleSubmit}
         className="space-y-6 bg-white/50 dark:bg-stone-800/30 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-xl"
       >
         <input type="hidden" name="_subject" value="Mesaj nou din formularul Natur Snack" />
@@ -92,10 +127,19 @@ export default function Contact() {
 
         <button
           type="submit"
+          disabled={status === "sending"}
           className="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-black py-4 rounded-xl transition-all transform hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-emerald-900/20"
         >
-          {content.btn}
+          {status === "sending" ? content.sending : content.btn}
         </button>
+
+        {status === "sent" && (
+          <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">{content.sent}</p>
+        )}
+
+        {status === "error" && (
+          <p className="text-sm font-semibold text-red-700 dark:text-red-400">{content.error}</p>
+        )}
       </form>
 
       <section className="mt-10 bg-stone-900 text-stone-200 p-6 md:p-8 rounded-3xl border border-stone-700/50 shadow-xl">

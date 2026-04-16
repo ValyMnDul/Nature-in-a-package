@@ -1,58 +1,123 @@
 "use client";
 import { useAppContext } from "../providers";
 
-const contactText = {
+const t = {
   ro: {
-    title: "Hai să vorbim",
+    title: "Să stăm de vorbă",
+    sub: "Ai întrebări despre produsele noastre din livada din Mălini sau vrei o ofertă personalizată? Scrie-ne!",
     name: "Numele tău",
-    email: "Email",
-    msg: "Mesaj",
-    btn: "Trimite",
-    address: "Locație: Mălini, Jud. Suceava"
+    email: "Adresa de email",
+    msg: "Mesajul tău",
+    btn: "Trimite Mesajul",
+    holderName: "Ion Popescu",
+    holderMsg: "Cu ce te putem ajuta?",
+    socialTitle: "Ne găsești și pe social media",
+    socialSub: "Urmărește noutățile din livadă, loturile noi și idei de gustări sănătoase."
   },
   en: {
-    title: "Let&apos;s Talk",
+    title: "Let's Talk",
+    sub: "Do you have questions about our products from the Mălini orchard or want a personalized offer? Write us!",
     name: "Your Name",
-    email: "Email",
-    msg: "Message",
-    btn: "Send",
-    address: "Location: Mălini, Suceava County"
+    email: "Email Address",
+    msg: "Your Message",
+    btn: "Send Message",
+    holderName: "John Doe",
+    holderMsg: "How can we help you?",
+    socialTitle: "Find us on social media",
+    socialSub: "Follow orchard updates, new batches and healthy snack ideas."
   }
 };
 
 export default function Contact() {
   const { lang } = useAppContext();
-  const t = contactText[lang];
+  const content = t[lang];
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h1 className="text-4xl font-extrabold text-center mb-10 text-stone-900 dark:text-white">
-        {t.title}
-      </h1>
-      
-      <div className="bg-white dark:bg-zinc-900 p-8 rounded-2xl shadow-sm border border-stone-200 dark:border-zinc-800">
-        <form className="space-y-6">
-          <div>
-            <label className="block text-sm font-semibold text-stone-700 dark:text-zinc-300 mb-2">{t.name}</label>
-            <input type="text" className="w-full text-base p-3 bg-stone-50 dark:bg-zinc-950 border border-stone-200 dark:border-zinc-800 rounded-lg focus:outline-none focus:border-emerald-500 dark:text-white" />
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-stone-700 dark:text-zinc-300 mb-2">{t.email}</label>
-            <input type="email" className="w-full text-base p-3 bg-stone-50 dark:bg-zinc-950 border border-stone-200 dark:border-zinc-800 rounded-lg focus:outline-none focus:border-emerald-500 dark:text-white" />
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-stone-700 dark:text-zinc-300 mb-2">{t.msg}</label>
-            <textarea rows={4} className="w-full text-base p-3 bg-stone-50 dark:bg-zinc-950 border border-stone-200 dark:border-zinc-800 rounded-lg focus:outline-none focus:border-emerald-500 dark:text-white"></textarea>
-          </div>
-          <button className="w-full bg-emerald-800 hover:bg-emerald-700 text-white text-lg font-bold py-3 rounded-lg transition-colors">
-            {t.btn}
-          </button>
-        </form>
+    <div className="max-w-3xl mx-auto px-6 py-20">
+      <div className="space-y-4 mb-12">
+        <h1 className="text-4xl md:text-5xl font-black text-stone-900 dark:text-white tracking-tight">
+          {content.title}
+        </h1>
+        <div className="h-1.5 w-20 bg-emerald-600 rounded-full"></div>
+        <p className="text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
+          {content.sub}
+        </p>
       </div>
 
-      <p className="text-center mt-8 text-sm font-bold text-emerald-800 dark:text-emerald-500 uppercase tracking-widest">
-        {t.address}
-      </p>
+      <form className="space-y-6 bg-white/50 dark:bg-stone-800/30 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-xl">
+        <div>
+          <label className="block text-sm font-bold text-stone-700 dark:text-stone-300 mb-2 uppercase tracking-wider">
+            {content.name}
+          </label>
+          <input
+            type="text"
+            className="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none transition-all"
+            placeholder={content.holderName}
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm font-bold text-stone-700 dark:text-stone-300 mb-2 uppercase tracking-wider">
+            {content.email}
+          </label>
+          <input
+            type="email"
+            className="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none transition-all"
+            placeholder="contact@exemplu.ro"
+          />
+        </div>
+
+        <div>
+          <label className="block text-sm font-bold text-stone-700 dark:text-stone-300 mb-2 uppercase tracking-wider">
+            {content.msg}
+          </label>
+          <textarea
+            rows={5}
+            className="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none transition-all resize-none"
+            placeholder={content.holderMsg}
+          ></textarea>
+        </div>
+
+        <button
+          type="button"
+          className="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-black py-4 rounded-xl transition-all transform hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-emerald-900/20"
+        >
+          {content.btn}
+        </button>
+      </form>
+
+      <section className="mt-10 bg-stone-900 text-stone-200 p-6 md:p-8 rounded-3xl border border-stone-700/50 shadow-xl">
+        <h2 className="text-xl md:text-2xl font-black text-white tracking-tight">{content.socialTitle}</h2>
+        <p className="mt-2 text-stone-400 text-sm md:text-base">{content.socialSub}</p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center transition-colors">
+            <svg viewBox="0 0 24 24" className="w-5 h-5" aria-hidden="true">
+              <defs>
+                <linearGradient id="igGradientContact" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#f9ce34" />
+                  <stop offset="50%" stopColor="#ee2a7b" />
+                  <stop offset="100%" stopColor="#6228d7" />
+                </linearGradient>
+              </defs>
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="url(#igGradientContact)" strokeWidth="2" />
+              <circle cx="12" cy="12" r="4" fill="none" stroke="url(#igGradientContact)" strokeWidth="2" />
+              <circle cx="17.2" cy="6.8" r="1.2" fill="url(#igGradientContact)" />
+            </svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook" className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center transition-colors">
+            <svg viewBox="0 0 24 24" className="w-5 h-5" aria-hidden="true">
+              <path fill="#1877F2" d="M24 12a12 12 0 1 0-13.88 11.86v-8.39H7.08V12h3.04V9.36c0-3 1.79-4.66 4.52-4.66 1.31 0 2.68.23 2.68.23v2.95h-1.51c-1.49 0-1.95.93-1.95 1.88V12h3.32l-.53 3.47h-2.79v8.39A12 12 0 0 0 24 12"/>
+            </svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noreferrer" aria-label="TikTok" className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center transition-colors">
+            <svg viewBox="0 0 24 24" className="w-5 h-5" aria-hidden="true">
+              <path fill="#25F4EE" d="M14.5 4v8.54a3.62 3.62 0 1 1-3.63-3.62c.31 0 .61.04.9.11V6.45a6.16 6.16 0 1 0 5.27 6.09V9.15c1.04.76 2.32 1.2 3.69 1.2V7.81A3.76 3.76 0 0 1 17.1 4h-2.6Z"/>
+              <path fill="#FE2C55" d="M13.5 3v8.54a3.62 3.62 0 1 1-3.63-3.62c.31 0 .61.04.9.11V5.45a6.16 6.16 0 1 0 5.27 6.09V8.15c1.04.76 2.32 1.2 3.69 1.2V6.81A3.76 3.76 0 0 1 16.1 3h-2.6Z"/>
+              <path fill="#fff" d="M12.96 3.63v8.18a2.95 2.95 0 1 1-2.95-2.95c.27 0 .52.04.77.1V7.34a5.5 5.5 0 1 0 4.75 5.47V9.73a6.3 6.3 0 0 0 3.27.95V9.2a4.48 4.48 0 0 1-3.53-1.72 4.44 4.44 0 0 1-.95-2.85h-1.36Z"/>
+            </svg>
+          </a>
+        </div>
+      </section>
     </div>
   );
 }

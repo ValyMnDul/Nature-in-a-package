@@ -13,7 +13,7 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export function Providers({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<"ro" | "en">("ro");
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     if (isDark) {

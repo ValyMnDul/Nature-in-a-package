@@ -1,20 +1,67 @@
 "use client";
+import Image from "next/image";
 import { useAppContext } from "../providers";
 
 const textData = {
   ro: {
-    title: "Povestea Noastră",
-    sub: "Din livada familiei, direct la tine în pachet.",
-    p1: "S.C. NATUR-FRUCT DESHIDRATAT S.R.L. a luat naștere dintr-o nevoie simplă: gustări reale pentru familiile noastre.",
-    p2: "Uscăm fructele blând, sub 45 de grade, pentru a păstra intacte vitaminele și enzimele. Este un proces lent, dar este singurul mod în care respectăm natura.",
-    malini: "Produs cu mândrie în livada proprie din localitatea Mălini, Județul Suceava."
+    title: "Povestea Natur Snack",
+    sub: "Din inima comunei Mălini, direct în pachetul tău.",
+    intro1: "S.C. NATUR-FRUCT DESHIDRATAT S.R.L. a pornit dintr-o nevoie simplă și o viziune clară: crearea unor gustări reale, sănătoase, fără compromisuri. Într-o piață saturată de produse ultra-procesate, am decis să ne întoarcem la origini.",
+    intro2: "În livada noastră din Mălini, Județul Suceava, am înțeles că natura ne oferă deja perfecțiunea. Misiunea noastră a devenit simplă: să păstrăm acea perfecțiune pentru cât mai mult timp, folosind tehnologia pentru a conserva, nu pentru a altera.",
+    processTitle: "Rețeta și Procesul de Realizare",
+    processSub: "Fără zahăr adăugat. Fără conservanți. Fără coloranți. Doar materie primă de calitatea întâi, timp și multă răbdare.",
+    steps: [
+      {
+        title: "1. Selecția Riguroasă a Materiei Prime",
+        desc: "Baza oricărui produs excepțional este materia primă. Fructele și legumele sunt culese sau selectate doar atunci când ating punctul optim de maturitate. Acesta este momentul în care conținutul natural de fructoză și vitamine este la nivelul maxim, garantând un gust dulce și intens fără niciun adaos."
+      },
+      {
+        title: "2. Pregătirea și Porționarea Preciză",
+        desc: "Fiecare lot trece printr-un proces strict de igienizare. Fructele și legumele sunt spălate, curățate și tăiate. Felierea nu este întâmplătoare; grosimea fiecărei bucăți este calculată la milimetru pentru a asigura o uscare uniformă, menținând un echilibru perfect între o textură crocantă și un miez plin de aromă."
+      },
+      {
+        title: "3. Deshidratarea Lentă (Secretul Nostru)",
+        desc: "Acesta este nucleul procesului nostru. Folosim cuptoare profesionale de deshidratare unde aerul cald circulă constant, la temperaturi controlate ce nu depășesc 45&deg;C. Acest proces lent, care poate dura între 12 și 24 de ore, extrage doar apa. Vitaminele, mineralele și enzimele esențiale rămân complet intacte, produsul final fiind un super-aliment."
+      },
+      {
+        title: "4. Răcirea și Stabilizarea",
+        desc: "După scoaterea din cuptoare, produsele sunt lăsate să se răcească lent în mediu controlat. Această etapă de stabilizare previne condensul și asigură textura finală crocantă pe care clienții noștri o apreciază."
+      },
+      {
+        title: "5. Ambalarea Etanșă",
+        desc: "Pentru a menține calitatea fără a folosi conservanți, ambalarea se face imediat. Folosim pungi speciale cu barieră de protecție împotriva umidității și a luminii (ambalaje cu fereastră sau opace), asigurând un termen de valabilitate îndelungat, în mod 100% natural."
+      }
+    ]
   },
   en: {
-    title: "Our Story",
-    sub: "From the family orchard, straight to your package.",
-    p1: "S.C. NATUR-FRUCT DESHIDRATAT S.R.L. was born from a simple need: real snacks for our families.",
-    p2: "We dry our fruits gently, under 45 degrees, to keep vitamins and enzymes intact. It is a slow process, but the only way we respect nature.",
-    malini: "Proudly produced in our own orchard in Mălini, Suceava County."
+    title: "The Natur Snack Story",
+    sub: "From the heart of Mălini directly to your package.",
+    intro1: "S.C. NATUR-FRUCT DESHIDRATAT S.R.L. started from a simple need and a clear vision: creating real, healthy snacks without compromises. In a market saturated with ultra-processed products, we decided to return to our roots.",
+    intro2: "In our orchard in Mălini, Suceava County, we understood that nature already offers perfection. Our mission became simple: to preserve that perfection for as long as possible, using technology to conserve, not to alter.",
+    processTitle: "Our Recipe & Production Process",
+    processSub: "No added sugar. No preservatives. No artificial colors. Just premium raw materials, time, and a lot of patience.",
+    steps: [
+      {
+        title: "1. Rigorous Raw Material Selection",
+        desc: "The foundation of any exceptional product is the raw material. Fruits and vegetables are harvested or selected only when they reach optimal maturity. This is when the natural content of fructose and vitamins is at its peak, guaranteeing a sweet and intense taste without any additions."
+      },
+      {
+        title: "2. Preparation and Precise Slicing",
+        desc: "Every batch goes through a strict sanitization process. Fruits and vegetables are washed, peeled, and cut. Slicing is not random; the thickness of each piece is calculated to the millimeter to ensure uniform drying, maintaining a perfect balance between a crispy texture and a flavorful core."
+      },
+      {
+        title: "3. Slow Dehydration (Our Secret)",
+        desc: "This is the core of our process. We use professional dehydration ovens where warm air circulates constantly at controlled temperatures not exceeding 45&deg;C. This slow process, which can take between 12 and 24 hours, extracts only the water. Vitamins, minerals, and essential enzymes remain completely intact, making the final product a superfood."
+      },
+      {
+        title: "4. Cooling and Stabilization",
+        desc: "After being removed from the ovens, the products are left to cool slowly in a controlled environment. This stabilization step prevents condensation and ensures the final crispy texture that our customers appreciate."
+      },
+      {
+        title: "5. Airtight Packaging",
+        desc: "To maintain quality without using preservatives, packaging is done immediately. We use special bags with a protective barrier against moisture and light, ensuring a long shelf life in a 100% natural way."
+      }
+    ]
   }
 };
 
@@ -23,24 +70,66 @@ export default function DespreNoi() {
   const t = textData[lang];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-12">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-stone-900 dark:text-white">
-        {t.title}
-      </h1>
-      <p className="text-xl font-semibold text-orange-600">
-        {t.sub}
-      </p>
+    <div className="max-w-5xl mx-auto px-6 py-16 space-y-24">
       
-      <div className="text-left space-y-6 text-lg text-stone-600 dark:text-zinc-400 leading-relaxed mx-auto">
-        <p>{t.p1}</p>
-        <div className="bg-emerald-50 dark:bg-emerald-900/20 p-6 rounded-2xl border-l-4 border-emerald-600 text-stone-800 dark:text-zinc-200">
-          <p>{t.p2}</p>
+      <section className="text-center space-y-8">
+        <div className="flex justify-center mb-10">
+          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-emerald-100 dark:border-emerald-900/50 shadow-2xl bg-white flex items-center justify-center p-4">
+            <Image 
+              src="/logo.jpeg" 
+              alt="Natura la Pachet Logo" 
+              fill
+              sizes="(max-width: 768px) 12rem, 16rem"
+              className="object-contain"
+              priority
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="inline-block mt-8 bg-stone-100 dark:bg-zinc-900 border border-stone-200 dark:border-zinc-800 p-6 rounded-xl">
-        <h3 className="text-lg font-bold text-emerald-900 dark:text-emerald-400 uppercase tracking-wide">{t.malini}</h3>
-      </div>
+        <h1 className="text-5xl md:text-6xl font-black text-stone-900 dark:text-white tracking-tight">
+          {t.title}
+        </h1>
+        <p className="text-xl md:text-2xl font-bold text-emerald-700 dark:text-emerald-500 uppercase tracking-widest">
+          {t.sub}
+        </p>
+      </section>
+
+      <section className="bg-white/60 dark:bg-stone-800/40 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-white/20 shadow-xl space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed font-medium">
+        <p>{t.intro1}</p>
+        <p>{t.intro2}</p>
+      </section>
+
+      <section className="space-y-12">
+        <div className="text-center space-y-4">
+          <h2 className="text-4xl font-black text-stone-900 dark:text-white">
+            {t.processTitle}
+          </h2>
+          <div className="h-1.5 w-24 bg-orange-500 mx-auto rounded-full"></div>
+          <p className="text-lg text-stone-600 dark:text-stone-400 max-w-2xl mx-auto font-medium">
+            {t.processSub}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-1 before:bg-linear-to-b before:from-transparent before:via-emerald-600/30 before:to-transparent">
+          {t.steps.map((step, index) => (
+            <div key={index} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-stone-900 bg-emerald-600 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                <span className="font-bold text-sm">{index + 1}</span>
+              </div>
+              
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/60 dark:bg-stone-800/40 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <h3 className="font-bold text-xl text-emerald-800 dark:text-emerald-400 mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
+                  {step.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </div>
   );
 }

@@ -69,20 +69,20 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-20">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
       <div className="space-y-4 mb-12">
-        <h1 className="text-4xl md:text-5xl font-black text-stone-900 dark:text-white tracking-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-stone-900 dark:text-white tracking-tight">
           {content.title}
         </h1>
         <div className="h-1.5 w-20 bg-emerald-600 rounded-full"></div>
-        <p className="text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
+        <p className="text-base sm:text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
           {content.sub}
         </p>
       </div>
 
       <form
         onSubmit={handleSubmit}
-        className="space-y-6 bg-white/50 dark:bg-stone-800/30 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-xl"
+        className="space-y-6 bg-white/50 dark:bg-stone-800/30 backdrop-blur-sm p-5 sm:p-8 rounded-3xl border border-white/20 shadow-xl"
       >
         <input type="hidden" name="_subject" value="Mesaj nou din formularul Natur Snack" />
         <input type="hidden" name="_language" value={lang} />
@@ -142,7 +142,7 @@ export default function Contact() {
         )}
       </form>
 
-      <section className="mt-10 bg-stone-900 text-stone-200 p-6 md:p-8 rounded-3xl border border-stone-700/50 shadow-xl">
+      <section className="mt-10 bg-stone-900 text-stone-200 p-5 sm:p-6 md:p-8 rounded-3xl border border-stone-700/50 shadow-xl">
         <h2 className="text-xl md:text-2xl font-black text-white tracking-tight">{content.socialTitle}</h2>
         <p className="mt-2 text-stone-400 text-sm md:text-base">{content.socialSub}</p>
         <div className="mt-5 flex flex-wrap gap-3">

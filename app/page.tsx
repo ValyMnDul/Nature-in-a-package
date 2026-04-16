@@ -82,17 +82,17 @@ export default function Home() {
           <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-sky-500/15 blur-3xl" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-16 md:pt-24 md:pb-28 grid lg:grid-cols-2 gap-10 md:gap-12 items-center">
           <div className="space-y-8">
             <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-emerald-700 dark:text-emerald-300">
               {text.heroBadge}
             </span>
 
-            <h1 className="whitespace-pre-line text-5xl md:text-7xl font-black leading-[0.95] tracking-tight text-stone-900 dark:text-white">
+            <h1 className="whitespace-pre-line text-4xl sm:text-5xl md:text-7xl font-black leading-[0.95] tracking-tight text-stone-900 dark:text-white">
               {text.heroTitle}
             </h1>
 
-            <p className="max-w-xl text-lg md:text-xl text-stone-600 dark:text-zinc-300 leading-relaxed">
+            <p className="max-w-xl text-base sm:text-lg md:text-xl text-stone-600 dark:text-zinc-300 leading-relaxed">
               {text.heroSub}
             </p>
 
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="aspect-4/5 rounded-4xl border border-stone-200/80 dark:border-zinc-800 overflow-hidden bg-linear-to-br from-stone-100 to-stone-200 dark:from-zinc-900 dark:to-zinc-800 p-6 md:p-8 shadow-xl">
+            <div className="aspect-4/5 rounded-3xl md:rounded-4xl border border-stone-200/80 dark:border-zinc-800 overflow-hidden bg-linear-to-br from-stone-100 to-stone-200 dark:from-zinc-900 dark:to-zinc-800 p-4 sm:p-6 md:p-8 shadow-xl">
               <div className="h-full rounded-3xl border-2 border-dashed border-emerald-400/40 dark:border-emerald-500/30 bg-white/50 dark:bg-black/20 p-6 flex flex-col justify-between">
                 <div className="inline-flex items-center rounded-full bg-orange-500/15 border border-orange-500/30 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-orange-700 dark:text-orange-300 w-fit">
                   {text.visualBadge}
@@ -144,10 +144,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pb-20 md:pb-24">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="pb-16 md:pb-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="mb-8 md:mb-10">
-            <h2 className="text-3xl md:text-5xl font-black text-stone-900 dark:text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-stone-900 dark:text-white tracking-tight">
               {text.sectionTitle}
             </h2>
             <p className="mt-3 text-stone-600 dark:text-zinc-300 max-w-2xl text-base md:text-lg">

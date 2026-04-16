@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -19,6 +20,7 @@ const t: Record<"ro" | "en", Translations> = {
 export default function Header() {
   const { lang, toggleLang, isDark, toggleDark } = useAppContext();
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
   const navItems = [
     { href: "/", label: t[lang].home },
     { href: "/produse", label: t[lang].shop },
@@ -26,10 +28,14 @@ export default function Header() {
     { href: "/contact", label: t[lang].contact },
   ];
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
   return (
-    <header className="sticky top-3 z-50 px-3 sm:px-6">
+    <header className="sticky top-2 sm:top-3 z-50 px-2 sm:px-6">
       <div className="max-w-7xl mx-auto rounded-2xl border border-stone-200/70 dark:border-zinc-800/70 bg-white/75 dark:bg-zinc-950/75 backdrop-blur-xl shadow-lg shadow-stone-900/5">
-        <div className="h-20 px-4 sm:px-6 flex items-center justify-between gap-4">
+        <div className="min-h-20 px-3 sm:px-6 py-3 flex items-center justify-between gap-2 sm:gap-4">
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
               src="/logo.jpeg"
@@ -39,11 +45,11 @@ export default function Header() {
               className="rounded-full object-cover border border-emerald-200 dark:border-emerald-900/50"
               priority
             />
-            <span className="hidden sm:flex flex-col leading-none">
-              <span className="text-xl font-black tracking-tight text-emerald-800 dark:text-emerald-400">
+            <span className="flex flex-col leading-none">
+              <span className="text-base sm:text-xl font-black tracking-tight text-emerald-800 dark:text-emerald-400">
                 NATUR SNACK
               </span>
-              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-orange-600 dark:text-orange-500 mt-1">
+              <span className="hidden sm:inline text-[10px] font-semibold uppercase tracking-[0.2em] text-orange-600 dark:text-orange-500 mt-1">
                 Natura la Pachet
               </span>
             </span>
@@ -68,10 +74,10 @@ export default function Header() {
             })}
           </nav>
 
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center gap-2">
             <button
               onClick={toggleLang}
-              className="bg-stone-100 dark:bg-zinc-800 px-3 py-2 rounded-full text-xs font-bold tracking-wide hover:bg-emerald-50 dark:hover:bg-zinc-700 transition-colors text-stone-800 dark:text-zinc-200"
+              className="bg-stone-100 dark:bg-zinc-800 px-2.5 sm:px-3 py-2 rounded-full text-[11px] sm:text-xs font-bold tracking-wide hover:bg-emerald-50 dark:hover:bg-zinc-700 transition-colors text-stone-800 dark:text-zinc-200"
             >
               {lang === "ro" ? "EN" : "RO"}
             </button>
@@ -81,26 +87,42 @@ export default function Header() {
             >
               {isDark ? "☀️" : "🌙"}
             </button>
+            <button
+              onClick={() => setMenuOpen((prev) => !prev)}
+              className="lg:hidden w-9 h-9 bg-stone-100 dark:bg-zinc-800 rounded-full flex items-center justify-center text-stone-700 dark:text-zinc-200"
+              aria-label={menuOpen ? "Închide meniul" : "Deschide meniul"}
+              aria-expanded={menuOpen}
+              aria-controls="mobile-nav"
+            >
+              <span className="text-lg leading-none">{menuOpen ? "✕" : "☰"}</span>
+            </button>
           </div>
         </div>
 
-        <nav className="lg:hidden border-t border-stone-200/70 dark:border-zinc-800/70 px-3 py-3 flex items-center gap-2 overflow-x-auto">
+        <nav
+          id="mobile-nav"
+          className={`lg:hidden border-t border-stone-200/70 dark:border-zinc-800/70 px-3 py-3 ${
+            menuOpen ? "block" : "hidden"
+          }`}
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {navItems.map((item) => {
             const active = pathname === item.href;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`whitespace-nowrap px-3 py-2 rounded-full text-sm font-semibold transition-colors ${
+                className={`w-full text-center px-3 py-2.5 rounded-xl text-sm font-semibold transition-colors ${
                   active
                     ? "bg-emerald-700 text-white"
-                    : "bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300"
+                    : "bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300 hover:bg-stone-200 dark:hover:bg-zinc-800"
                 }`}
               >
                 {item.label}
               </Link>
             );
           })}
+          </div>
         </nav>
       </div>
     </header>

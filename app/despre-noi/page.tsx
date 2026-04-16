@@ -70,11 +70,11 @@ export default function DespreNoi() {
   const t = textData[lang];
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-16 space-y-24">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16 space-y-14 sm:space-y-20 md:space-y-24">
       
-      <section className="text-center space-y-8">
-        <div className="flex justify-center mb-10">
-          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-emerald-100 dark:border-emerald-900/50 shadow-2xl bg-white flex items-center justify-center p-4">
+      <section className="text-center space-y-6 sm:space-y-8">
+        <div className="flex justify-center mb-8 sm:mb-10">
+          <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-emerald-100 dark:border-emerald-900/50 shadow-2xl bg-white flex items-center justify-center p-4">
             <Image 
               src="/logo.jpeg" 
               alt="Natura la Pachet Logo" 
@@ -86,22 +86,22 @@ export default function DespreNoi() {
           </div>
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-black text-stone-900 dark:text-white tracking-tight">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-stone-900 dark:text-white tracking-tight">
           {t.title}
         </h1>
-        <p className="text-xl md:text-2xl font-bold text-emerald-700 dark:text-emerald-500 uppercase tracking-widest">
+        <p className="text-base sm:text-xl md:text-2xl font-bold text-emerald-700 dark:text-emerald-500 uppercase tracking-[0.16em] sm:tracking-widest">
           {t.sub}
         </p>
       </section>
 
-      <section className="bg-white/60 dark:bg-stone-800/40 backdrop-blur-md p-8 md:p-12 rounded-3xl border border-white/20 shadow-xl space-y-6 text-lg text-stone-700 dark:text-stone-300 leading-relaxed font-medium">
+      <section className="bg-white/60 dark:bg-stone-800/40 backdrop-blur-md p-5 sm:p-8 md:p-12 rounded-3xl border border-white/20 shadow-xl space-y-5 sm:space-y-6 text-base sm:text-lg text-stone-700 dark:text-stone-300 leading-relaxed font-medium">
         <p>{t.intro1}</p>
         <p>{t.intro2}</p>
       </section>
 
-      <section className="space-y-12">
+      <section className="space-y-8 sm:space-y-12">
         <div className="text-center space-y-4">
-          <h2 className="text-4xl font-black text-stone-900 dark:text-white">
+          <h2 className="text-2xl sm:text-4xl font-black text-stone-900 dark:text-white">
             {t.processTitle}
           </h2>
           <div className="h-1.5 w-24 bg-orange-500 mx-auto rounded-full"></div>
@@ -110,18 +110,18 @@ export default function DespreNoi() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-1 before:bg-linear-to-b before:from-transparent before:via-emerald-600/30 before:to-transparent">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-1 before:bg-linear-to-b before:from-transparent before:via-emerald-600/30 before:to-transparent">
           {t.steps.map((step, index) => (
             <div key={index} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-stone-900 bg-emerald-600 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                 <span className="font-bold text-sm">{index + 1}</span>
               </div>
               
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/60 dark:bg-stone-800/40 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                <h3 className="font-bold text-xl text-emerald-800 dark:text-emerald-400 mb-3">
+              <div className="w-[calc(100%-3.5rem)] md:w-[calc(50%-2.5rem)] bg-white/60 dark:bg-stone-800/40 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-white/20 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <h3 className="font-bold text-lg sm:text-xl text-emerald-800 dark:text-emerald-400 mb-3">
                   {step.title}
                 </h3>
-                <p className="text-stone-600 dark:text-stone-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-stone-600 dark:text-stone-300 leading-relaxed">
                   {step.desc}
                 </p>
               </div>

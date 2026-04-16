@@ -24,15 +24,15 @@ export default function RootLayout({
           <Header />
           <main className="grow relative z-10">{children}</main>
           
-          <footer className="relative bg-stone-900 dark:bg-black text-stone-300 pt-20 pb-10 mt-20 border-t border-white/5">
-            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <footer className="relative bg-stone-900 dark:bg-black text-stone-300 pt-14 md:pt-20 pb-10 mt-14 md:mt-20 border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
                 
                 <div className="md:col-span-5 space-y-6">
-                  <h3 className="text-3xl font-black text-white tracking-tighter">
+                  <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tighter">
                     NATUR <span className="text-emerald-500">SNACK</span>
                   </h3>
-                  <p className="text-stone-400 text-lg leading-relaxed max-w-sm">
+                  <p className="text-stone-400 text-base sm:text-lg leading-relaxed max-w-sm">
                     Producem sănătate prin deshidratare lentă. Gustări 100% naturale, create cu respect pentru pământul din Mălini.
                   </p>
                 </div>
@@ -48,7 +48,7 @@ export default function RootLayout({
 
                 <div className="md:col-span-4 space-y-6">
                   <h4 className="text-xs font-black text-emerald-500 uppercase tracking-[0.2em]">Contact Direct</h4>
-                  <div className="space-y-2 text-stone-300 font-medium">
+                  <div className="space-y-2 text-sm sm:text-base text-stone-300 font-medium">
                     <p>Mălini, Str. Principală Nr. 13, Suceava</p>
                     <p className="text-white font-bold">salut@natursnack.ro</p>
                     <p className="pt-4 flex items-center gap-2">
@@ -91,11 +91,11 @@ export default function RootLayout({
 
               </div>
 
-              <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-                <p className="text-xs font-bold text-stone-500 uppercase tracking-widest">
+              <div className="mt-14 md:mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p className="text-[11px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest text-center md:text-left">
                   &copy; 2026 Natur Snack Factory S.R.L.
                 </p>
-                <div className="flex gap-8 text-xs font-bold text-stone-500 uppercase tracking-widest">
+                <div className="flex gap-6 sm:gap-8 text-[11px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">
                   <span className="hover:text-white cursor-pointer transition-colors">ANPC</span>
                   <span className="hover:text-white cursor-pointer transition-colors">GDPR</span>
                 </div>

@@ -1,65 +1,57 @@
+"use client";
+import { useAppContext } from "../providers";
+
+const products = {
+  ro: {
+    title: "Meniul Naturii",
+    desc: "Alege din gamele noastre premium. Fără aditivi, fără compromisuri.",
+    items: [
+      { name: "Mere & Pere Deshidratate", price: "15 RON", tag: "Clasic" },
+      { name: "Chipsuri Sfeclă & Oțet Balsamic", price: "18 RON", tag: "Veggie" },
+      { name: "Smoothie Instant (Măr & Spanac)", price: "22 RON", tag: "Inovație" }
+    ]
+  },
+  en: {
+    title: "Nature's Menu",
+    desc: "Choose from our premium ranges. No additives, no compromises.",
+    items: [
+      { name: "Dried Apples & Pears", price: "15 RON", tag: "Classic" },
+      { name: "Beetroot & Balsamic Chips", price: "18 RON", tag: "Veggie" },
+      { name: "Instant Smoothie (Apple & Spinach)", price: "22 RON", tag: "Innovation" }
+    ]
+  }
+};
+
 export default function Produse() {
-  const produse = [
-    {
-      gama: "Gama Classic",
-      nume: "Mere și Pere Deshidratate",
-      descriere: "Felii crocante din livada noastră. Dulceață 100% naturală.",
-      eticheta: "Produs în Mălini",
-      pret: "12,00 RON",
-      tag: "Popular"
-    },
-    {
-      gama: "Gama Veggie-Crunch",
-      nume: "Chipsuri de Sfeclă cu Oțet Balsamic",
-      descriere: "Alternativa perfectă la chipsurile prăjite din comerț.",
-      eticheta: "Fără Sare Adăugată",
-      pret: "14,50 RON",
-      tag: "Nou"
-    },
-    {
-      gama: "Gama Inovativ",
-      nume: "Smoothie Instant Cubes",
-      descriere: "Cubulețe presate de măr, spanac și banană. Adaugă apă și e gata în 30s!",
-      eticheta: "Inovație",
-      pret: "18,00 RON",
-      tag: "Premium"
-    },
-    {
-      gama: "Gama Inovativ",
-      nume: "Ananas cu Chili și Lime",
-      descriere: "Un snack îndrăzneț pentru seri cu prietenii. Gust exotic, picant-acrișor.",
-      eticheta: "Exotic",
-      pret: "16,00 RON"
-    }
-  ];
+  const { lang } = useAppContext();
+  const text = products[lang];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="text-4xl font-extrabold text-emerald-900 mb-4">Produsele Noastre</h1>
-        <p className="text-lg text-stone-600">Ambalate în pungi biodegradabile Doypack cu fereastră, pentru a vedea exact calitatea pe care o cumperi.</p>
+    <div className="max-w-7xl mx-auto px-6 py-24">
+      <div className="text-center mb-20 space-y-6">
+        <h1 className="text-6xl md:text-8xl font-black text-emerald-900 dark:text-emerald-500 tracking-tighter">
+          {text.title}
+        </h1>
+        <p className="text-3xl text-zinc-600 dark:text-zinc-400 font-medium">
+          {text.desc}
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {produse.map((produs, idx) => (
-          <div key={idx} className="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
-            <div className="h-48 bg-stone-100 flex items-center justify-center relative">
-               <span className="text-stone-400 text-sm">[Imagine Produs]</span>
-               {produs.tag && (
-                 <span className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                   {produs.tag}
-                 </span>
-               )}
+      <div className="grid md:grid-cols-3 gap-12">
+        {text.items.map((item, idx) => (
+          <div key={idx} className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-[30px] p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all group">
+            <div className="aspect-[4/3] bg-zinc-100 dark:bg-zinc-800 rounded-[20px] mb-8 flex items-center justify-center relative overflow-hidden">
+              <span className="text-zinc-400 text-2xl font-bold group-hover:scale-110 transition-transform">Imagine Fruct</span>
+              <span className="absolute top-4 right-4 bg-orange-500 text-white text-sm font-black uppercase px-4 py-2 rounded-full">
+                {item.tag}
+              </span>
             </div>
-            <div className="p-6 flex flex-col flex-grow">
-              <span className="text-xs font-semibold tracking-wider text-emerald-600 uppercase mb-2">{produs.gama}</span>
-              <h3 className="text-xl font-bold text-stone-800 mb-2">{produs.nume}</h3>
-              <p className="text-stone-600 text-sm mb-6 flex-grow">{produs.descriere}</p>
-              
-              <div className="flex items-center justify-between mt-auto pt-4 border-t border-stone-100">
-                <span className="text-xs font-medium text-stone-500 bg-stone-100 px-2 py-1 rounded">{produs.eticheta}</span>
-                <span className="text-lg font-bold text-emerald-900">{produs.pret}</span>
-              </div>
+            <h3 className="text-3xl font-black text-zinc-900 dark:text-white mb-6 leading-tight">{item.name}</h3>
+            <div className="flex justify-between items-center mt-auto">
+              <span className="text-3xl font-black text-emerald-800 dark:text-emerald-400">{item.price}</span>
+              <button className="bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-6 py-3 rounded-xl font-bold text-lg hover:bg-emerald-600 transition-colors">
+                +
+              </button>
             </div>
           </div>
         ))}

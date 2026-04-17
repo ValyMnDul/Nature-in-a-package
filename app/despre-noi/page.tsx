@@ -4,7 +4,7 @@ import { useAppContext } from "../providers";
 
 const textData = {
   ro: {
-    title: "Povestea Natur Snack",
+    title: "Povestea LIVADA CU RONȚĂIELI",
     sub: "Din inima comunei Mălini, direct în pachetul tău.",
     intro1: "S.C. NATUR-FRUCT DESHIDRATAT S.R.L. a pornit dintr-o nevoie simplă și o viziune clară: crearea unor gustări reale, sănătoase, fără compromisuri. Într-o piață saturată de produse ultra-procesate, am decis să ne întoarcem la origini.",
     intro2: "În livada noastră din Mălini, Județul Suceava, am înțeles că natura ne oferă deja perfecțiunea. Misiunea noastră a devenit simplă: să păstrăm acea perfecțiune pentru cât mai mult timp, folosind tehnologia pentru a conserva, nu pentru a altera.",
@@ -34,7 +34,7 @@ const textData = {
     ]
   },
   en: {
-    title: "The Natur Snack Story",
+    title: "The LIVADA CU RONȚĂIELI Story",
     sub: "From the heart of Mălini directly to your package.",
     intro1: "S.C. NATUR-FRUCT DESHIDRATAT S.R.L. started from a simple need and a clear vision: creating real, healthy snacks without compromises. In a market saturated with ultra-processed products, we decided to return to our roots.",
     intro2: "In our orchard in Mălini, Suceava County, we understood that nature already offers perfection. Our mission became simple: to preserve that perfection for as long as possible, using technology to conserve, not to alter.",
@@ -77,7 +77,7 @@ export default function DespreNoi() {
           <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-emerald-100 dark:border-emerald-900/50 shadow-2xl bg-white flex items-center justify-center p-4">
             <Image 
               src="/logo.jpeg" 
-              alt="Natura la Pachet Logo" 
+              alt="LIVADA CU RONȚĂIELI Logo" 
               fill
               sizes="(max-width: 768px) 12rem, 16rem"
               className="object-contain"

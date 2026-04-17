@@ -39,7 +39,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
               src="/logo.jpeg"
-              alt="Natur Snack logo"
+              alt="LIVADA CU RONȚĂIELI logo"
               width={44}
               height={44}
               className="rounded-full object-cover border border-emerald-200 dark:border-emerald-900/50"
@@ -47,10 +47,10 @@ export default function Header() {
             />
             <span className="flex flex-col leading-none">
               <span className="text-base sm:text-xl font-black tracking-tight text-emerald-800 dark:text-emerald-400">
-                NATUR SNACK
+                LIVADA CU RONȚĂIELI
               </span>
               <span className="hidden sm:inline text-[10px] font-semibold uppercase tracking-[0.2em] text-orange-600 dark:text-orange-500 mt-1">
-                Natura la Pachet
+                LIVADA CU RONȚĂIELI
               </span>
             </span>
           </Link>

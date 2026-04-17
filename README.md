@@ -1,4 +1,4 @@
-# S.C. "Natura la Pachet" SRL — Plan de Afaceri
+# S.C. "LIVADA CU RONȚĂIELI" SRL — Plan de Afaceri
 
 ---
 

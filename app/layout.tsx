@@ -8,7 +8,7 @@ import Header from "./Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Natur Snack | Natura la Pachet",
+  title: "LIVADA CU RONȚĂIELI",
   description: "Fructe deshidratate artizanal în Mălini.",
 };
 
@@ -36,7 +36,7 @@ export default function RootLayout({
                 
                 <div className="md:col-span-5 space-y-6">
                   <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tighter">
-                    NATUR <span className="text-emerald-500">SNACK</span>
+                    LIVADA CU RONȚĂIELI
                   </h3>
                   <p className="text-stone-400 text-base sm:text-lg leading-relaxed max-w-sm">
                     Producem sănătate prin deshidratare lentă. Gustări 100% naturale, create cu respect pentru pământul din Mălini.
@@ -56,7 +56,7 @@ export default function RootLayout({
                   <h4 className="text-xs font-black text-emerald-500 uppercase tracking-[0.2em]">Contact Direct</h4>
                   <div className="space-y-2 text-sm sm:text-base text-stone-300 font-medium">
                     <p>Mălini, Str. Principală Nr. 13, Suceava</p>
-                    <p className="text-white font-bold">salut@natursnack.ro</p>
+                    <p className="text-white font-bold">salut@livadacurontaieli.ro</p>
                     <p className="pt-4 flex items-center gap-2">
                       <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                       Deschis: Luni - Vineri: 08:00 - 17:00
@@ -99,7 +99,7 @@ export default function RootLayout({
 
               <div className="mt-14 md:mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
                 <p className="text-[11px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest text-center md:text-left">
-                  &copy; 2026 Natur Snack Factory S.R.L.
+                  &copy; 2026 LIVADA CU RONȚĂIELI S.R.L.
                 </p>
                 <div className="flex gap-6 sm:gap-8 text-[11px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">
                   <span className="hover:text-white cursor-pointer transition-colors">ANPC</span>

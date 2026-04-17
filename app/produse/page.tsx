@@ -3,7 +3,7 @@ import { useAppContext } from "../providers";
 
 const products = {
   ro: {
-    title: "Colecția Natur Snack",
+    title: "Colecția LIVADA CU RONȚĂIELI",
     desc: "Gustări premium din fructe și legume deshidratate lent. Fără aditivi, fără compromisuri.",
     cta: "Adaugă în coș",
     tagsTitle: "Potrivit pentru",
@@ -36,7 +36,7 @@ const products = {
     ],
   },
   en: {
-    title: "Natur Snack Collection",
+    title: "LIVADA CU RONȚĂIELI Collection",
     desc: "Premium snacks from slow-dehydrated fruits and vegetables. No additives, no compromises.",
     cta: "Add to cart",
     tagsTitle: "Perfect for",
@@ -115,7 +115,7 @@ export default function Produse() {
                 {item.tag}
               </span>
               <div className="h-full w-full rounded-2xl border border-white/50 dark:border-white/5 bg-white/60 dark:bg-black/20 grid place-items-center text-stone-400 dark:text-zinc-500 text-sm font-bold uppercase tracking-widest">
-                Natur Snack
+                LIVADA CU RONȚĂIELI
               </div>
             </div>
 

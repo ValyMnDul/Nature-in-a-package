@@ -84,7 +84,7 @@ export default function Contact() {
         onSubmit={handleSubmit}
         className="space-y-6 bg-white/50 dark:bg-stone-800/30 backdrop-blur-sm p-5 sm:p-8 rounded-3xl border border-white/20 shadow-xl"
       >
-        <input type="hidden" name="_subject" value="Mesaj nou din formularul Natur Snack" />
+        <input type="hidden" name="_subject" value="Mesaj nou din formularul LIVADA CU RONȚĂIELI" />
         <input type="hidden" name="_language" value={lang} />
         <div>
           <label className="block text-sm font-bold text-stone-700 dark:text-stone-300 mb-2 uppercase tracking-wider">

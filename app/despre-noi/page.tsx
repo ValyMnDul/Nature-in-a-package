@@ -6,8 +6,8 @@ const textData = {
   ro: {
     title: "Povestea LIVADA CU RONȚĂIELI",
     sub: "Din inima comunei Mălini, direct în pachetul tău.",
-    intro1: "S.C. NATUR-FRUCT DESHIDRATAT S.R.L. a pornit dintr-o nevoie simplă și o viziune clară: crearea unor gustări reale, sănătoase, fără compromisuri. Într-o piață saturată de produse ultra-procesate, am decis să ne întoarcem la origini.",
-    intro2: "În livada noastră din Mălini, Județul Suceava, am înțeles că natura ne oferă deja perfecțiunea. Misiunea noastră a devenit simplă: să păstrăm acea perfecțiune pentru cât mai mult timp, folosind tehnologia pentru a conserva, nu pentru a altera.",
+    intro1: "Povestea din spatele produsului: Energie pură, fără compromisuri!",
+    intro2: "Când ai 2 hectare de legume și fructe crescute sub soare, natura face toată treaba. Noi doar am găsit metoda de a păstra această energie într-o pungă. Chipsurile noastre sunt obținute exclusiv prin deshidratare, fără ulei, fără zahăr adăugat și fără conservanți. O explozie de fibre și vitamine, perfectă pentru momentele când ai nevoie de o gustare nutritivă, crocantă și 100% naturală. Simplu, sănătos, local!",
     processTitle: "Rețeta și Procesul de Realizare",
     processSub: "Fără zahăr adăugat. Fără conservanți. Fără coloranți. Doar materie primă de calitatea întâi, timp și multă răbdare.",
     steps: [
@@ -36,8 +36,8 @@ const textData = {
   en: {
     title: "The LIVADA CU RONȚĂIELI Story",
     sub: "From the heart of Mălini directly to your package.",
-    intro1: "S.C. NATUR-FRUCT DESHIDRATAT S.R.L. started from a simple need and a clear vision: creating real, healthy snacks without compromises. In a market saturated with ultra-processed products, we decided to return to our roots.",
-    intro2: "In our orchard in Mălini, Suceava County, we understood that nature already offers perfection. Our mission became simple: to preserve that perfection for as long as possible, using technology to conserve, not to alter.",
+    intro1: "The story behind our product: Pure energy, no compromises!",
+    intro2: "When you have 2 hectares of fruits and vegetables grown under the sun, nature does all the hard work. We simply found the method to preserve that energy in a bag. Our chips are made exclusively through dehydration, with no oil, no added sugar, and no preservatives. A burst of fiber and vitamins, perfect for moments when you need a nutritious, crunchy, and 100% natural snack. Simple, healthy, local!",
     processTitle: "Our Recipe & Production Process",
     processSub: "No added sugar. No preservatives. No artificial colors. Just premium raw materials, time, and a lot of patience.",
     steps: [

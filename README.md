@@ -8,7 +8,7 @@
 
 | Câmp | Detalii |
 |---|---|
-| **Denumire** | S.C. NATUR-FRUCT DESHIDRATAT SRL |
+| **Denumire** | S.C. LIVADA CU RONȚĂIELI SRL |
 | **Formă juridică** | Societate cu Răspundere Limitată (SRL) |
 | **Sediu** | Mălini, Strada Principală nr. 13, județul Suceava |
 | **Cod CAEN** | 1039 – Prelucrarea și conservarea fructelor și legumelor |
@@ -201,4 +201,4 @@ Gama cuprinde 5 linii:
 
 ---
 
-*Plan de afaceri elaborat pentru S.C. Natur-Fruct Deshidratat SRL · Mălini, Suceava · 2026*
+*Plan de afaceri elaborat pentru S.C. LIVADA CU RONȚĂIELI SRL · Mălini, Suceava · 2026*

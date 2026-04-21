@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useAppContext } from "../providers";
 
 const products = {
@@ -10,28 +11,32 @@ const products = {
     tags: ["Birou", "Copii", "Sport", "Călătorii"],
     items: [
       {
-        name: "Mere & Pere Deshidratate",
-        desc: "Felii crocante, dulceață naturală, textură curată.",
+        name: "Prune deshidratate",
+        desc: "Prune deshidratate la temperatură joasă.",
         price: "15 RON",
-        tag: "Clasic",
+        tag: "Fructe",
+        image: "/prune.png",
       },
       {
-        name: "Sfeclă & Oțet Balsamic",
-        desc: "Snack vegetal îndrăzneț, echilibru între dulce și acidulat.",
+        name: "Felii de gutui",
+        desc: "Felii de gutui deshidratate la temperatură joasă.",
         price: "18 RON",
-        tag: "Veggie",
+        tag: "Fructe",
+        image: "/gutui.png",
       },
       {
-        name: "Smoothie Instant Cubes",
-        desc: "Cuburi presate pentru smoothie rapid, doar adaugi apă.",
+        name: "Căpșuni deshidratate",
+        desc: "Căpșuni deshidratate la temperatură joasă.",
         price: "22 RON",
-        tag: "Inovație",
+        tag: "Fructe",
+        image: "/capsuni.png",
       },
       {
-        name: "Ananas Chili & Lime",
-        desc: "Profil exotic cu note fresh și finish picant-acrișor.",
+        name: "Prafuri de legume",
+        desc: "Prafuri de legume.",
         price: "20 RON",
-        tag: "Exotic",
+        tag: "Veggie",
+        image: "/legume.png",
       },
     ],
   },
@@ -43,28 +48,32 @@ const products = {
     tags: ["Office", "Kids", "Sport", "Travel"],
     items: [
       {
-        name: "Dried Apples & Pears",
-        desc: "Crispy slices, natural sweetness, clean texture.",
+        name: "Dried plums",
+        desc: "Low-temperature dehydrated plums.",
         price: "15 RON",
-        tag: "Classic",
+        tag: "Fruit",
+        image: "/prune.png",
       },
       {
-        name: "Beetroot & Balsamic",
-        desc: "Bold veggie snack with sweet-acid balance.",
+        name: "Dried quince slices",
+        desc: "Low-temperature dehydrated quince slices.",
         price: "18 RON",
-        tag: "Veggie",
+        tag: "Fruit",
+        image: "/gutui.png",
       },
       {
-        name: "Instant Smoothie Cubes",
-        desc: "Pressed cubes for a fast smoothie, just add water.",
+        name: "Dried strawberries",
+        desc: "Low-temperature dehydrated strawberries.",
         price: "22 RON",
-        tag: "Innovation",
+        tag: "Fruit",
+        image: "/capsuni.png",
       },
       {
-        name: "Pineapple Chili & Lime",
-        desc: "Exotic profile with fresh notes and a spicy-sour finish.",
+        name: "Vegetable powders",
+        desc: "Vegetable powders.",
         price: "20 RON",
-        tag: "Exotic",
+        tag: "Veggie",
+        image: "/legume.png",
       },
     ],
   },
@@ -114,8 +123,14 @@ export default function Produse() {
               <span className="absolute top-4 left-4 rounded-full bg-orange-500 text-white text-xs font-black uppercase tracking-wide px-3 py-1">
                 {item.tag}
               </span>
-              <div className="h-full w-full rounded-2xl border border-white/50 dark:border-white/5 bg-white/60 dark:bg-black/20 grid place-items-center text-stone-400 dark:text-zinc-500 text-sm font-bold uppercase tracking-widest">
-                LIVADA CU RONȚĂIELI
+              <div className="relative h-full w-full rounded-2xl border border-white/50 dark:border-white/5 bg-white/60 dark:bg-black/20 overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                  className="object-cover"
+                />
               </div>
             </div>
 

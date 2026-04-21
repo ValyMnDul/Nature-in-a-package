@@ -146,7 +146,7 @@ export default function Contact() {
         <h2 className="text-xl md:text-2xl font-black text-white tracking-tight">{content.socialTitle}</h2>
         <p className="mt-2 text-stone-400 text-sm md:text-base">{content.socialSub}</p>
         <div className="mt-5 flex flex-wrap gap-3">
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center transition-colors">
+          <a href="https://www.instagram.com/livadacurontaieli?igsh=MXdvbnE1ZjBjZXBvNA%3D%3D" target="_blank" rel="noreferrer" aria-label="Instagram" className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center transition-colors">
             <svg viewBox="0 0 24 24" className="w-5 h-5" aria-hidden="true">
               <defs>
                 <linearGradient id="igGradientContact" x1="0%" y1="100%" x2="100%" y2="0%">
@@ -160,12 +160,12 @@ export default function Contact() {
               <circle cx="17.2" cy="6.8" r="1.2" fill="url(#igGradientContact)" />
             </svg>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook" className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center transition-colors">
+          <a href="https://www.facebook.com/profile.php?id=61572134110533" target="_blank" rel="noreferrer" aria-label="Facebook" className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center transition-colors">
             <svg viewBox="0 0 24 24" className="w-5 h-5" aria-hidden="true">
               <path fill="#1877F2" d="M24 12a12 12 0 1 0-13.88 11.86v-8.39H7.08V12h3.04V9.36c0-3 1.79-4.66 4.52-4.66 1.31 0 2.68.23 2.68.23v2.95h-1.51c-1.49 0-1.95.93-1.95 1.88V12h3.32l-.53 3.47h-2.79v8.39A12 12 0 0 0 24 12"/>
             </svg>
           </a>
-          <a href="https://tiktok.com" target="_blank" rel="noreferrer" aria-label="TikTok" className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center transition-colors">
+          <a href="https://www.tiktok.com/@livadacurontaieli" target="_blank" rel="noreferrer" aria-label="TikTok" className="w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center transition-colors">
             <svg viewBox="0 0 24 24" className="w-5 h-5" aria-hidden="true">
               <path fill="#25F4EE" d="M14.5 4v8.54a3.62 3.62 0 1 1-3.63-3.62c.31 0 .61.04.9.11V6.45a6.16 6.16 0 1 0 5.27 6.09V9.15c1.04.76 2.32 1.2 3.69 1.2V7.81A3.76 3.76 0 0 1 17.1 4h-2.6Z"/>
               <path fill="#FE2C55" d="M13.5 3v8.54a3.62 3.62 0 1 1-3.63-3.62c.31 0 .61.04.9.11V5.45a6.16 6.16 0 1 0 5.27 6.09V8.15c1.04.76 2.32 1.2 3.69 1.2V6.81A3.76 3.76 0 0 1 16.1 3h-2.6Z"/>

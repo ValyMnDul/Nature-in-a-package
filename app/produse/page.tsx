@@ -18,7 +18,7 @@ const products = {
         image: "/prune.png",
       },
       {
-        name: "Felii de gutui",
+        name: "Felii de gutui deshidratate",
         desc: "Felii de gutui deshidratate la temperatură joasă.",
         price: "18 RON",
         tag: "Fructe",
@@ -55,7 +55,7 @@ const products = {
         image: "/prune.png",
       },
       {
-        name: "Dried quince slices",
+        name: "Dehydrated quince slices",
         desc: "Low-temperature dehydrated quince slices.",
         price: "18 RON",
         tag: "Fruit",

@@ -32,9 +32,7 @@ const t = {
         accent: "Fresh mai mult",
       },
     ],
-    visualTitle: "",
-    visualSub: "",
-    visualBadge: "Hero Product Shot",
+    visualBadge: "Produsul nostru",
   },
   en: {
     heroBadge: "Local product from Mălini",
@@ -64,9 +62,7 @@ const t = {
         accent: "Longer fresh",
       },
     ],
-    visualTitle: "",
-    visualSub: "",
-    visualBadge: "Hero Product Shot",
+    visualBadge: "Our signature product",
   },
 };
 
@@ -125,21 +121,25 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="aspect-4/5 rounded-3xl md:rounded-4xl border border-stone-200/80 dark:border-zinc-800 overflow-hidden bg-linear-to-br from-stone-100 to-stone-200 dark:from-zinc-900 dark:to-zinc-800 p-4 sm:p-6 md:p-8 shadow-xl">
-              <div className="h-full rounded-3xl border-2 border-emerald-400/30 dark:border-emerald-500/30 bg-white/40 dark:bg-black/20 p-3 sm:p-4 flex flex-col justify-between">
-                <div className="inline-flex items-center rounded-full bg-orange-500/15 border border-orange-500/30 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-orange-700 dark:text-orange-300 w-fit">
+            <div className="absolute -top-6 -right-6 h-28 w-28 rounded-full bg-orange-400/20 blur-2xl" />
+            <div className="absolute -bottom-8 -left-6 h-32 w-32 rounded-full bg-emerald-500/20 blur-2xl" />
+
+            <div className="relative aspect-4/5 rounded-3xl md:rounded-4xl overflow-hidden border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 shadow-2xl">
+              <Image
+                src="/main.png"
+                alt={lang === "ro" ? "Pachet principal Livada cu Rontaieli" : "LIVADA CU RONTAIELI main package"}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 42vw"
+                className="object-cover"
+              />
+
+              <div className="absolute inset-0 bg-linear-to-t from-black/45 via-black/5 to-transparent" />
+
+              <div className="absolute bottom-4 left-4 sm:bottom-5 sm:left-5">
+                <span className="inline-flex items-center rounded-full bg-white/90 text-stone-900 px-3.5 py-1.5 text-[11px] sm:text-xs font-black uppercase tracking-[0.2em]">
                   {text.visualBadge}
-                </div>
-                <div className="relative grow rounded-2xl overflow-hidden border border-white/50 dark:border-white/10">
-                  <Image
-                    src="/main.png"
-                    alt="LIVADA CU RONTAIELI main product"
-                    fill
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                    className="object-cover"
-                  />
-                </div>
+                </span>
               </div>
             </div>
           </div>

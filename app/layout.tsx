@@ -56,7 +56,7 @@ export default function RootLayout({
                   <h4 className="text-xs font-black text-emerald-500 uppercase tracking-[0.2em]">Contact Direct</h4>
                   <div className="space-y-2 text-sm sm:text-base text-stone-300 font-medium">
                     <p>Mălini, Str. Principală Nr. 13, Suceava</p>
-                    <p className="text-white font-bold">salut@livadacurontaieli.ro</p>
+                    <p className="text-white font-bold">livadacurontaieli@gmail.com</p>
                     <p className="pt-4 flex items-center gap-2">
                       <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                       Deschis: Luni - Vineri: 08:00 - 17:00

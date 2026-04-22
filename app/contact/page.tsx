@@ -46,14 +46,23 @@ export default function Contact() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
+    const payload = {
+      name: String(formData.get("name") ?? ""),
+      email: String(formData.get("email") ?? ""),
+      message: String(formData.get("message") ?? ""),
+      _subject: "Mesaj nou din formularul LIVADA CU RONȚĂIELI",
+      _captcha: "false",
+      _language: lang,
+    };
 
     try {
-      const response = await fetch("https://formspree.io/f/xyklekpe", {
+      const response = await fetch("https://formsubmit.co/ajax/mindrilavasilevalentin@gmail.com", {
         method: "POST",
         headers: {
           Accept: "application/json",
+          "Content-Type": "application/json",
         },
-        body: formData,
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
@@ -108,7 +117,7 @@ export default function Contact() {
             name="email"
             required
             className="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-900 dark:text-white focus:ring-2 focus:ring-emerald-500 outline-none transition-all"
-            placeholder="contact@exemplu.ro"
+            placeholder="ion.popescu@email.com"
           />
         </div>
 

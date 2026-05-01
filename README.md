@@ -1,204 +1,204 @@
-# S.C. "LIVADA CU RONȚĂIELI" SRL — Plan de Afaceri
+# S.C. "LIVADA CU RONȚĂIELI" SRL — Business Plan
 
 ---
 
-## 1. Prezentare Generală
+## 1. General Overview
 
-### Date de identificare
+### Identification Data
 
-| Câmp | Detalii |
+| Field | Details |
 |---|---|
-| **Denumire** | S.C. LIVADA CU RONȚĂIELI SRL |
-| **Formă juridică** | Societate cu Răspundere Limitată (SRL) |
-| **Sediu** | Mălini, Strada Principală nr. 13, județul Suceava |
-| **Cod CAEN** | 1039 – Prelucrarea și conservarea fructelor și legumelor |
-| **Data începerii** | 1 august 2026 |
-| **Manager general** | Vasile |
+| **Company Name** | S.C. LIVADA CU RONȚĂIELI SRL |
+| **Legal Form** | Limited Liability Company (LLC) |
+| **Headquarters** | Mălini, Main Street no. 13, Suceava County |
+| **CAEN Code** | 1039 – Processing and preserving of fruits and vegetables |
+| **Start Date** | August 1, 2026 |
+| **General Manager** | Vasile |
 
-### Structura acționariatului
+### Shareholding Structure
 
-| Asociat | Cotă |
+| Associate | Share |
 |---|---|
-| Asociat 1 | 50% |
-| Asociat 2 | 20% |
-| Asociat 3 | 15% |
-| Asociat 4 | 15% |
+| Associate 1 | 50% |
+| Associate 2 | 20% |
+| Associate 3 | 15% |
+| Associate 4 | 15% |
 
 ---
 
-## 2. Descrierea Afacerii
+## 2. Business Description
 
-Compania prelucrează fructe dintr-o livadă proprie de **2 hectare** și legume de la furnizori locali, producând snack-uri sănătoase fără aditivi.
+The company processes fruits from its own **2-hectare orchard** and vegetables from local suppliers, producing healthy snacks without additives.
 
-### Produse
+### Products
 
-| Produs | Descriere | Preț retail |
+| Product | Description | Retail Price |
 |---|---|---|
-| Chipsuri de fructe | Felii subțiri, crocante, umiditate <10% | 8,50–10 RON / 50g |
-| Mix-uri de legume uscate | Combinații de legume deshidratate | 8,50–10 RON / 50g |
-| Cuburi smoothie instant | Gata în 30 sec, valabilitate 12 luni, 95% nutrienți | 10–12 RON / porție |
-| Chipsuri de legume condimentate | Condimentate natural, fără E-uri | 8,50–10 RON / 50g |
+| Fruit chips | Thin, crispy slices, moisture <10% | 8.50–10 RON / 50g |
+| Dried vegetable mixes | Combinations of dehydrated vegetables | 8.50–10 RON / 50g |
+| Instant smoothie cubes | Ready in 30 sec, 12-month shelf life, 95% nutrients | 10–12 RON / serving |
+| Seasoned vegetable chips | Naturally seasoned, no additives | 8.50–10 RON / 50g |
 
-### Parametri economici
+### Economic Parameters
 
-- **Cost de producție:** 3,50 RON / produs
-- **Preț angro:** 5,50 RON
-- **Preț retail:** 8,50–10 RON
+- **Production cost:** 3.50 RON / product
+- **Wholesale price:** 5.50 RON
+- **Retail price:** 8.50–10 RON
 
 ---
 
-## 3. Analiză de Piață
+## 3. Market Analysis
 
-### Segmente de clienți
+### Customer Segments
 
-| Segment | Frecvență | Priorități | WTP |
+| Segment | Frequency | Priorities | WTP |
 |---|---|---|---|
-| Persoane fizice | Săptămânal | Gust natural, fără aditivi | 10–15 RON |
-| Retaileri | Lunar | Ambalaj, termen de valabilitate | — |
-| Companii | Ocazional | Cadouri corporative, evenimente | — |
+| Individuals | Weekly | Natural taste, no additives | 10–15 RON |
+| Retailers | Monthly | Packaging, shelf life | — |
+| Companies | Occasional | Corporate gifts, events | — |
 
-### Tendințe de piață
+### Market Trends
 
-- Cerere crescândă pentru snack-uri sănătoase
-- Migrarea consumatorilor de la alimente ultra-procesate
-- Creștere stabilă estimată pe termen mediu
+- Growing demand for healthy snacks
+- Consumer shift away from ultra-processed foods
+- Stable medium-term growth forecast
 
-### Concurență
+### Competition
 
-**Branduri mari:** producție de masă, prețuri mai mici, produse importate.  
-**Producători mici:** produse naturale, capacitate limitată.
+**Large brands:** mass production, lower prices, imported products.  
+**Small producers:** natural products, limited capacity.
 
-### Avantaje competitive
+### Competitive Advantages
 
-- Materie primă proprie (livadă 2 ha)
-- Flexibilitate în producție
-- Poveste autentică locală (Bucovina)
-- Loturi proaspete, trasabilitate completă
+- Own raw material (2-hectare orchard)
+- Production flexibility
+- Authentic local story (Bucovina)
+- Fresh batches, full traceability
 
 ---
 
-## 4. Strategie de Marketing
+## 4. Marketing Strategy
 
-### Politica de produs
+### Product Policy
 
-Gama cuprinde 5 linii:
+The range includes 5 lines:
 1. Pure snacks
 2. Local flavors
 3. Cooking mixes
 4. Vegetable chips
 5. Smoothie cubes
 
-**Ambalaj:** pungi kraft resigilabile, design minimalist, fereastră transparentă.
+**Packaging:** resealable kraft bags, minimalist design, transparent window.
 
-### Politica de preț
+### Pricing Policy
 
-- Metodă: cost-plus
-- Poziționare: mediu-premium
-- Preț țintă: 10–12 RON / 50g
+- Method: cost-plus
+- Positioning: mid-premium
+- Target price: 10–12 RON / 50g
 
-### Distribuție
+### Distribution
 
-- Magazin online propriu
-- Parteneri retaileri
-- Vânzare directă (târguri, evenimente)
+- Own online store
+- Retail partners
+- Direct sales (fairs, events)
 
-### Promovare
+### Promotion
 
 - Social media (Instagram, Facebook)
-- Participare la evenimente și târguri
-- Materiale educaționale despre alimentație sănătoasă
+- Participation in events and fairs
+- Educational materials about healthy eating
 
 ---
 
-## 5. Operațiuni
+## 5. Operations
 
-### Procesul de producție
+### Production Process
 
-1. Recoltare
-2. Spălare și sortare
-3. Tăiere
-4. Deshidratare
-5. Ambalare și etichetare
+1. Harvesting
+2. Washing and sorting
+3. Cutting
+4. Dehydration
+5. Packaging and labeling
 
-### Spațiu de producție (80 mp)
+### Production Space (80 sqm)
 
-| Zonă | Suprafață |
+| Area | Surface |
 |---|---|
-| Spălare | ~15 mp |
-| Procesare | ~20 mp |
-| Uscare | ~30 mp |
-| Ambalare | ~15 mp |
+| Washing | ~15 sqm |
+| Processing | ~20 sqm |
+| Drying | ~30 sqm |
+| Packaging | ~15 sqm |
 
-### Echipamente principale
+### Main Equipment
 
-- Deshidratoare industriale
-- Feliator
-- Mașină de ambalat în vid
+- Industrial dehydrators
+- Slicer
+- Vacuum packaging machine
 
-### Control calitate
+### Quality Control
 
-- Sistem HACCP implementat
-- Monitorizare temperatură și umiditate
-- Trasabilitate loturi
+- HACCP system implemented
+- Temperature and humidity monitoring
+- Batch traceability
 
 ---
 
-## 6. Informații Financiare
+## 6. Financial Information
 
-### Necesar de finanțare
+### Funding Requirements
 
-| Sursă | Sumă |
+| Source | Amount |
 |---|---|
-| Fonduri proprii | 50.000 RON |
-| Fonduri externe | 200.000 RON |
-| **Total** | **250.000 RON** |
+| Own funds | 50,000 RON |
+| External funds | 200,000 RON |
+| **Total** | **250,000 RON** |
 
-### Proiecții financiare
+### Financial Projections
 
-| An | Venituri (RON) | Profit (RON) | Marjă |
+| Year | Revenue (RON) | Profit (RON) | Margin |
 |---|---|---|---|
-| Anul 1 | 188.000 | 45.000 | ~24% |
-| Anul 2 | 300.000 | 90.000 | ~30% |
-| Anul 3 | 450.000 | 140.000 | ~31% |
+| Year 1 | 188,000 | 45,000 | ~24% |
+| Year 2 | 300,000 | 90,000 | ~30% |
+| Year 3 | 450,000 | 140,000 | ~31% |
 
-### Active
+### Assets
 
-- Livadă 2 hectare
-- Clădire producție 80 mp
-
----
-
-## 7. Analiza SWOT
-
-### Puncte forte
-- Materie primă proprie → costuri controlate
-- Produse 100% naturale, fără aditivi
-- Flexibilitate și adaptabilitate rapidă la cerere
-
-### Puncte slabe
-- Capacitate de producție limitată
-- Brand nou, fără notorietate
-
-### Oportunități
-- Piața de snack-uri sănătoase în creștere
-- Acces la fonduri europene (PNDR, AFIR)
-
-### Amenințări
-- Creșterea prețurilor la energie
-- Competitori cu resurse mai mari
-- Riscuri climatice (afectarea recoltei)
+- 2-hectare orchard
+- 80 sqm production building
 
 ---
 
-## 8. Riscuri și Măsuri de Atenuare
+## 7. SWOT Analysis
 
-| Risc | Impact | Măsură |
+### Strengths
+- Own raw materials → controlled costs
+- 100% natural products, no additives
+- Flexibility and rapid adaptation to demand
+
+### Weaknesses
+- Limited production capacity
+- New brand, no recognition
+
+### Opportunities
+- Growing healthy snack market
+- Access to European funds (PNDR, AFIR)
+
+### Threats
+- Rising energy prices
+- Competitors with greater resources
+- Climate risks (affecting harvest)
+
+---
+
+## 8. Risks and Mitigation Measures
+
+| Risk | Impact | Measure |
 |---|---|---|
-| Sezonalitate | Mediu | Stocuri tampon, diversificare furnizori |
-| Costuri energie | Ridicat | Panouri solare, optimizare consum |
-| Competiție | Mediu | Diferențiere prin autenticitate și calitate |
-| Riscuri climatice | Ridicat | Asigurare cultură, furnizori alternativi |
+| Seasonality | Medium | Buffer stocks, supplier diversification |
+| Energy costs | High | Solar panels, consumption optimization |
+| Competition | Medium | Differentiation through authenticity and quality |
+| Climate risks | High | Crop insurance, alternative suppliers |
 
 ---
 
-*Plan de afaceri elaborat pentru S.C. LIVADA CU RONȚĂIELI SRL · Mălini, Suceava · 2026*
+*Business plan developed for S.C. LIVADA CU RONȚĂIELI SRL · Mălini, Suceava · 2026*
